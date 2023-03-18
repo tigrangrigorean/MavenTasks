@@ -33,20 +33,18 @@ public class ArrayUtil {
 	/**
 	 * @print the largest member of Array
 	 */
-	void largestMember() {
-		long[] arr = new long[] {1l,2l,12l,4l};
+	public long largestMember(long[] arr) {
 		Arrays.sort(arr);
-		System.out.println(arr[arr.length-1]);
+		return arr[arr.length-1];
 	}
 	
 	/**
 	 * @print arrays min value
 	 * @print arr[0]
 	 */
-	void minValuePrint() {
-		float[] arr = new float[] {1.7f,2.1f,0.5f,3.4f};
+	public float minValuePrint(float [] arr) {
 		Arrays.sort(arr);
-		System.out.println(arr[0]);
+		return arr[0];
 	}
 	
 	/**
