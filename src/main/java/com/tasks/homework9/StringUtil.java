@@ -10,24 +10,26 @@ public class StringUtil {
 	 * This method concats String
 	 * @print stringBuilder
 	 */
-	void stringConcatsMethod() {
+	public String stringConcatsMethod() {
 		String a = "Hello";
 		String b = "World";
 		int c = 1;
 		int d = 2;
 		
-		System.out.println(a + b);
-		System.out.println(c + d + a + b);
-		System.out.println(Integer.toString(c) + d + a + b);
-		System.out.println(a + c + d + b);
-		
+//		System.out.println(a + b);
+//		System.out.println(c + d + a + b);
+//		System.out.println(Integer.toString(c) + d + a + b);
+//		System.out.println(a + c + d + b);
+//		
 		StringBuilder stringBuilder = new StringBuilder("Hello");
 		
-		stringBuilder.append(b);
-		System.out.println(stringBuilder);
-		stringBuilder.append(c);
-		stringBuilder.append(d);
-		System.out.println(stringBuilder);
+//		stringBuilder.append(b);
+//		System.out.println(stringBuilder);
+//		stringBuilder.append(c);
+//		stringBuilder.append(d);
+//		System.out.println(stringBuilder);
+		
+		return a+c+d+b;
 	}
 	
 	
@@ -55,7 +57,7 @@ public class StringUtil {
 	 * @return String type
 	 */
 	
-	String reverseString(String str) {
+	public String reverseString(String str) {
 		
 		
 		String[] arr = str.split("");
@@ -119,13 +121,9 @@ public class StringUtil {
      * The "*" symbol
 	 * @print str
 	 */
-	void method() {
-		Scanner sc = new Scanner(System.in);
+	public String method(String str) {
 		
-		String str = sc.nextLine();
 		
-		sc.close();
-	
 		for(int i = 0; i<str.length();i++) {
 			if(str.length()<20) {
 				for(int j = 0; j<20-str.length();j++) {
@@ -133,7 +131,7 @@ public class StringUtil {
 				}
 			}
 		}
-		System.out.println(str);
+		return str;
 
 	}
 	
@@ -144,7 +142,7 @@ public class StringUtil {
 	 * @print stringBuilder
 	 */
 	
-	void removeCharacter(String str) {
+	String removeCharacter(String str) {
 		String[] arr = str.split("a");
 		StringBuilder stringBuilder = new StringBuilder(str);
 		str = "";
@@ -153,12 +151,14 @@ public class StringUtil {
 	}
 		System.out.println(str);
 		
+		
 		for(int i = 0; i<stringBuilder.length();i++) {
 		if(stringBuilder.charAt(i) == 'a') {
 			stringBuilder.deleteCharAt(i);
 		}
 		}
 		System.out.println(stringBuilder);
+		return str;
 		
 	}
 	
@@ -169,7 +169,7 @@ public class StringUtil {
 	 * @print stringBuilder
 	 */
 	
-	void replaceCharacter(String str) {
+	String replaceCharacter(String str) {
 		String[] arr = str.split("a");
 		StringBuilder stringBuilder = new StringBuilder(str);
 		str = "";
@@ -188,6 +188,7 @@ public class StringUtil {
 			}
 		}
 		System.out.println(stringBuilder);
+		return str;
 	}
 	
 	/**
@@ -197,7 +198,7 @@ public class StringUtil {
 	 * @print arr[index]
 	 */
 	
-	void longestSubString(String str) {
+	String longestSubString(String str) {
 		String[] arr = str.split(" ");
 		int len = 0;
 		int index = 0;
@@ -208,6 +209,7 @@ public class StringUtil {
 			}
 		}
 		System.out.println(arr[index]);
+		return str;
 	}
 	
 	/**
@@ -215,7 +217,7 @@ public class StringUtil {
 	 * @param str
 	 * @print index
 	 */
-	void indexOfChar(String str) {
+	int indexOfChar(String str) {
 		String[] arr = str.split("");
 		int index = 0;
 		for(int i = 0; i<arr.length; i++) {
@@ -225,6 +227,7 @@ public class StringUtil {
 			}
 		}
 		System.out.println(index);
+		return index;
 	}
 	
 	/**
@@ -252,7 +255,7 @@ public class StringUtil {
 	 * @param str
 	 * @return true or false
 	 */
-	boolean nullOrNot(String str) {
+	public boolean nullOrNot(String str) {
 		
 		if(!str.isEmpty() && str != null) {
 			return true;
