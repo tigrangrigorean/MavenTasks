@@ -9,7 +9,7 @@ public class Methods {
 	 * @param b
 	 * @return 0
 	 */
-	static int firstMethod(int a, int b) {
+	static int methodReturnZero(int a, int b) {
 		return 0;	
 	}
 	
@@ -17,7 +17,7 @@ public class Methods {
 	/**
 	 * @return;
 	 */
-	static void secondMethod() {
+	static void methodWithoutBody() {
 		
 	}
 	
@@ -28,7 +28,7 @@ public class Methods {
 	 * @param b
 	 * @print Hello World
 	 */
-	static void thirdMethod(boolean a, boolean b) {
+	static void methodPrintHW(boolean a, boolean b) {
 		System.out.println("Hello World");
 	}
 	
@@ -38,7 +38,7 @@ public class Methods {
 	 * @param a
 	 * @return a
 	 */
-	static char fourthMethod(char a) {
+	static char methodReturnChar(char a) {
 		return a;
 	}
 	
@@ -49,7 +49,7 @@ public class Methods {
 	 * @param b
 	 * @return b
 	 */
-	static float fifthMethod(float a, float b) {
+	static float methodReturnFlB(float a, float b) {
 		return b;
 	}
 	
@@ -65,17 +65,6 @@ public class Methods {
 			System.out.println(n);
 			recursionMethod(n-1);
 		}
-		
-	}
-
-	public static void main(String[] args) {
-		
-		System.out.println(firstMethod(2, 5));
-		secondMethod();
-		thirdMethod(true,false);
-		System.out.println(fourthMethod('a'));
-		System.out.println(fifthMethod(11.5f , 2.7f));
-		recursionMethod(5);
 		
 	}
 
