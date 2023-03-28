@@ -35,7 +35,7 @@ public class Exercises {
 	}
 	
 	/**
-	 * Method create queue, add elements and remove all elements, check queue contains element or not
+	 * Method create queue, add elements
 	 */
 	void queueOfIntegers() {
 		Queue<Integer> queue = new PriorityQueue<Integer>();
@@ -47,17 +47,38 @@ public class Exercises {
 		
 		System.out.println(queue);
 		
-		if(queue.contains(2)) {
-			System.out.println(true);
+	}
+	
+	/**
+	 * Method check are queue contains element
+	 * @param <E>
+	 * @return
+	 */
+	<E> boolean checkQueue(E element) {
+		Queue<Integer> queue = new PriorityQueue<Integer>();
+		
+		queue.add(1);
+		queue.add(4);
+		queue.add(3);
+		queue.add(2);
+		
+		if(queue.contains(element)) {
+			return true;
 		} else {
-			System.out.println(false);
+			return false;
 		}
 		
-		
-		while(!queue.isEmpty()) {
-		queue.poll();
-		}
-		System.out.println(queue);
+	}
+	
+	/**
+	 * Method remove Elements in Queue
+	 */
+	void removeAllElements() {
+		Queue<Integer> queue = new PriorityQueue<Integer>();
+		queue.add(1);
+		queue.add(4);
+		queue.add(3);
+		queue.add(2);
 	}
 	
 	/**
@@ -71,11 +92,17 @@ public class Exercises {
 		queue.add("No");
 		
 		
+		while(!queue.isEmpty()) {
+		queue.poll();
+		}
+		System.out.println(queue);
+		
+		
 		
 	}
 	
 	/**
-	 * Method create deque of Integers, remove elements from deque and check contains deque element or not
+	 * Method create deque of Integers,and check contains deque element or not
 	 */
 	void dequeOfIntegers() {
 		Deque deque = new ArrayDeque();
@@ -87,13 +114,41 @@ public class Exercises {
 		
 		System.out.println(deque);
 		
-		if(deque.contains(2)) {
-			System.out.println(true);
-		} else {
-			System.out.println(false);
-		}
+	}
+	
+	/**
+	 * Method check are Deque contains element
+	 * @param <E>
+	 * @param element
+	 */
+	<E> boolean checkDeque(E element) {
+	Deque deque = new ArrayDeque();
 		
-
+		deque.add(1);
+		deque.add(4);
+		deque.add(3);
+		deque.add(2);
+		
+		
+		if(deque.contains(element)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	/**
+	 * Method removes all elements in Deque
+	 */
+	void removeElementsDeque() {
+		
+		Deque deque = new ArrayDeque();
+		
+		deque.add(1);
+		deque.add(4);
+		deque.add(3);
+		deque.add(2);
+		
 		while(!deque.isEmpty()) {
 			deque.poll();
 		}
@@ -142,9 +197,7 @@ public class Exercises {
 		queue.add("Blue");
 		queue.add("White");
 		queue.add("Black");
-		
-		
-		
+
 		Iterator<String> it = queue.iterator();
 		while(it.hasNext())  {
 		   queue2.add(it.next());
@@ -166,7 +219,8 @@ public class Exercises {
 		queue.add("White");
 		queue.add("Black");
 		
-		System.out.println(queue.poll());
+		queue.poll();
+		System.out.println(queue);
 	}
 		
 	
