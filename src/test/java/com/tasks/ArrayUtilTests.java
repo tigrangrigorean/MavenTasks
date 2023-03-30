@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.tasks.homework8.ArrayUtil;
+import com.tasks.array_util.ArrayUtil;
 
 public class ArrayUtilTests {
 

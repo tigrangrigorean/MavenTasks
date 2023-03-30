@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.tasks.homework9.StringUtil;
+import com.tasks.string_util.StringUtil;
 
 public class StringTest {
 	

@@ -6,13 +6,14 @@ import java.util.Arrays;
 
 import org.junit.Assert;
 
-import com.tasks.homework15.BubbleSort;
-import com.tasks.homework15.HeapSort;
-import com.tasks.homework15.InsertionSort;
-import com.tasks.homework15.MergeSort;
-import com.tasks.homework15.QuickSort;
-import com.tasks.homework15.SelectionSort;
-import com.tasks.homework8.ArrayUtil;
+import com.tasks.array_util.ArrayUtil;
+import com.tasks.sorts.BubbleSort;
+import com.tasks.sorts.HeapSort;
+import com.tasks.sorts.InsertionSort;
+import com.tasks.sorts.MergeSort;
+import com.tasks.sorts.QuickSort;
+import com.tasks.sorts.SelectionSort;
+
 import org.junit.Test;
 
 public class AppTest {
